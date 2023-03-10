@@ -8,9 +8,17 @@ class Leaderboard:
     The Leaderboard as a Singleton
     """
     _table = {}
+    _instance = None
 
     def __new__(cls, *args, **kwargs):
-        return cls
+        if cls._instance is None:
+            '''
+            It's generally considered good practice to use 
+            super().__new__(cls) to ensure that the instance 
+            is properly initialized.
+            '''
+            cls._instance = super().__new__(cls)
+        return cls._instance
 
     @classmethod
     def print(cls):
