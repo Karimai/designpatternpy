@@ -16,10 +16,3 @@ The pattern consists of four main components:
 
 4. Product: This is the final object that is built by the builder. It represents the complex object that is created.
 
-
-
-
-Please also review my example below. 
-1. Is it good or not? 
-2. can you improve it a bit?
-3. Can you write another example or a use case even for builder design pattern in python ?
