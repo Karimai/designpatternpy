@@ -24,7 +24,7 @@ class Leaderboard:
     def print(cls):
         print('-----------------board-----------------')
         for name, position in sorted(cls._table.items()):
-            print(f"{position}\t\t{name}")
+            print(f"{name}\t\t{position}")
         print()
 
     @classmethod
