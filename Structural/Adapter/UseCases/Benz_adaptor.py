@@ -5,7 +5,7 @@ from Bmw import Bmw
 class BenzAdaptor(IBenz):
     """
     BenzAdaptor is an appropriate name since we'd like to adapt
-    `Bmw` to conform to the Ibenz interface. It reflects the fact that
+    `Bmw` to conform to the IBenz interface. It reflects the fact that
     the adapter is making a `Bmw` object compatible with the IBenz interface.
     """
     def __init__(self, bmw: Bmw):
