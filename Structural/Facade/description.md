@@ -7,3 +7,7 @@ The way, developers can use the `Facade` class to interact with the complex syst
 Developers do not need to understand the inner parts of the complex system.
 
 The main goal is to simplify complex systems and provide a user-friendly interface.
+
+The facade unifies the common methods that becomes much less overwhelming for developers.
+
+To create a simplified interface that perform many other things behind the sences.
