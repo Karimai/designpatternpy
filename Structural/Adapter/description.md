@@ -12,3 +12,5 @@ It acts as a middleman between two incompatible interfaces, converting the inter
 
 This pattern is useful when the existing interface is incompatible with the new one which we need. Instead of modifying the existing code, which can be risky and time-consuming, you can create an adapter that translates the existing code's interface into the interface expected by the new system.
 
+It is used to convert the interface of an existing class into another interface that a client expects. It allows two incompatible interfaces to work together. The Adapter acts as a wrapper around an object and exposes a different interface to the client. In other words, it makes two incompatible interfaces compatible by wrapping one of them with a compatible interface.
+
