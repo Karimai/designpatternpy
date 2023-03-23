@@ -1,7 +1,10 @@
+import pyfiglet
+
 from shape_implementer_interface import IShapeImplementer
 
 
 class SquareImplementer(IShapeImplementer):
 
     def draw_implementation(self):
-        print('\u25A0')
+        txt = pyfiglet.figlet_format('o', font='isometric3')
+        print(txt)
