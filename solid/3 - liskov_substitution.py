@@ -3,7 +3,9 @@ This principle mainly says that a given derived class must be substitutable
 for its base classes.
 https://www.pythontutorial.net/python-oop/python-liskov-substitution-principle/
 
-It says the base class must not change the behaviour or the base class. 
+It says the base class must not change the behaviour or the base class.
+
+You should always be able to substitute a base type for a subtype.
 """
 
 from abc import ABCMeta, abstractmethod

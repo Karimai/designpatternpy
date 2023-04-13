@@ -1,6 +1,12 @@
+"""
+The class should have only one main purposes.
+The class should only have one reason to change.
+It is also called Separation of concerns: different classes handling different, independent tasks/problems.
+"""
+
 class Candidates:
     # The primary responsibility is keeping the candidate data.
-    # There should be only one reason to change a class and it
+    # There should be only one reason to change a class, and it
     # should be related to the primary goal of the class.
     def __init__(self):
         self.candidates = []

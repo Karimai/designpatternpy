@@ -1,4 +1,4 @@
-The builder design pattern is a creational design pattern that allows you to create complex objects step by step.
+The builder design pattern allows you to create complex objects step by step.
 
 The idea behind this pattern is to separate the construction of an object from its representation, so that the same construction process can create different representations.
 
@@ -16,3 +16,6 @@ The pattern consists of four main components:
 
 4. Product: This is the final object that is built by the builder. It represents the complex object that is created.
 
+Piecewise construction.
+
+Builder provides an API for constructing an object step-by-step.
