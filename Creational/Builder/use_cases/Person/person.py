@@ -72,3 +72,7 @@ if __name__ == "__main__":
         lives.at("Ganzeril").with_postcode("6721 RK").in_city("Bennekom").\
         build()
     print(p)
+
+    addp = PersonAddressBuilder(None)
+    print(addp.lives.at("Iran").build())
+
