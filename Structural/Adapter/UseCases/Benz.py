@@ -2,7 +2,6 @@ from Benz_interface import IBenz
 
 
 class Benz(IBenz):
-
     def __init__(self):
         self.model = None
         self.tires = None

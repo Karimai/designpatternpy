@@ -2,11 +2,10 @@ from Bmw_interface import IBmw
 
 
 class Bmw(IBmw):
-
     def __init__(self):
         self.tires: int = 0
-        self.model: str = ''
-        self.color: str = ''
+        self.model: str = ""
+        self.color: str = ""
 
     def manufacture(self, model: str, color: str, tires: int):
         self.color = color

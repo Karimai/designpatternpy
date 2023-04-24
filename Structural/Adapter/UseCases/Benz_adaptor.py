@@ -8,6 +8,7 @@ class BenzAdaptor(IBenz):
     `Bmw` to conform to the IBenz interface. It reflects the fact that
     the adapter is making a `Bmw` object compatible with the IBenz interface.
     """
+
     def __init__(self, bmw: Bmw):
         self.bmw = bmw
 
