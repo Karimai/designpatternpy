@@ -9,5 +9,5 @@ class CircleImplementer(IShapeImplementer):
     """
 
     def draw_implementation(self):
-        txt = pyfiglet.figlet_format("o", font='block')
+        txt = pyfiglet.figlet_format("o", font="block")
         print(txt)

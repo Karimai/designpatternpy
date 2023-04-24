@@ -14,3 +14,4 @@ This pattern is useful when the existing interface is incompatible with the new 
 
 It is used to convert the interface of an existing class into another interface that a client expects. It allows two incompatible interfaces to work together. The Adapter acts as a wrapper around an object and exposes a different interface to the client. In other words, it makes two incompatible interfaces compatible by wrapping one of them with a compatible interface.
 
+This is a simple example of the adapter design pattern in Python. The adapter pattern is useful when you need to use an existing class that does not quite fit with the interface you need to use in your code. By creating an adapter class that adapts the existing class to your required interface, you can avoid changing your code to work with the existing class directly.

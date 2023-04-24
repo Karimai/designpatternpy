@@ -7,4 +7,3 @@ from square_implementer import SquareImplementer
 shapes = [Circle(CircleImplementer), Square(SquareImplementer)]
 for shape in shapes:
     shape.draw()
-

@@ -10,4 +10,3 @@ class IShapeImplementer(ABC):
     @abstractmethod
     def draw_implementation():
         pass
-    

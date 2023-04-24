@@ -7,4 +7,3 @@ class Abstraction:
 
     def operation(self):
         return self.implementation.operation_implementation()
-

@@ -1,7 +1,6 @@
 from implementation_interface import IImplementation
 
 
-class SecondImplemetation(IImplementation):
+class SecondImplementation(IImplementation):
     def operation_implementation(self):
-        return 'The Second Implementation'
-
+        return "The Second Implementation"
