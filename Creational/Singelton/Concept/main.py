@@ -11,7 +11,8 @@ class Singleton:
 
     def __new__(cls, *args, **kwargs):
         """
-        It returns a reference to itself
+        You can come here and modify how the object is constructed.
+        It returns a reference to itself.
         """
         return cls
 
