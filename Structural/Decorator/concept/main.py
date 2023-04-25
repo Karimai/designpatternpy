@@ -9,13 +9,11 @@ class IFlower(metaclass=ABCMeta):
 
 
 class Flower(IFlower):
-
     def method(self):
         return "Flower"
 
 
 class FlowerDecorator(IFlower):
-
     def __init__(self, obj):
         self.obj = obj
 
@@ -23,7 +21,7 @@ class FlowerDecorator(IFlower):
         return f"A decorated {self.obj.method()}!"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     flower = Flower()
     print(flower.method())
 

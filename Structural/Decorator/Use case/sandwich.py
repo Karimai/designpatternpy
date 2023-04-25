@@ -9,4 +9,3 @@ class Sandwich(ISandwich):
 
     def get_sandwich(self):
         return f"{self.bread} bread, {self.meat} meat, {self.cheese} cheese"
-

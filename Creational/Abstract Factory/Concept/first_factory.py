@@ -5,6 +5,7 @@ class IProduct(metaclass=ABCMeta):
     """
     A Hypothetical Class Interface
     """
+
     @staticmethod
     @abstractmethod
     def create_object():
@@ -17,6 +18,7 @@ class ProductA(IProduct):
     """
     A class that implements the IProduct interface
     """
+
     def __init__(self):
         self.name = "Product A"
 
@@ -36,11 +38,10 @@ class FactoryA:
     @staticmethod
     def create_object(properties):
         try:
-            if properties == 'a':
+            if properties == "a":
                 return ProductA()
-            if properties == 'b':
+            if properties == "b":
                 return ProductB()
         except Exception as e:
             print(e)
         return None
-

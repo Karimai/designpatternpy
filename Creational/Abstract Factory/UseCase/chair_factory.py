@@ -5,13 +5,12 @@ from medium_chair import MediumChair
 
 
 class ChairFactory:
-
     @staticmethod
     def get_chair(chair_type: str) -> IChair | None:
-        if 'small' in chair_type.lower():
+        if "small" in chair_type.lower():
             return SmallChair()
-        if 'medium' in chair_type.lower():
+        if "medium" in chair_type.lower():
             return MediumChair()
-        if 'big' in chair_type.lower():
+        if "big" in chair_type.lower():
             return BigChair()
         return None

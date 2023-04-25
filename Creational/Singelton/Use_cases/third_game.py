@@ -3,7 +3,6 @@ from game_interface import IGame
 
 
 class ThirdGame(IGame):
-
     def __init__(self):
         self.leaderboard = Leaderboard()
 

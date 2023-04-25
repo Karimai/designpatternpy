@@ -8,9 +8,4 @@ class BigChair(IChair):
         self._depth = 80
 
     def get_dimensions(self):
-        return {
-            'width': self._width,
-            'height': self._height,
-            'depth': self._depth
-        }
-
+        return {"width": self._width, "height": self._height, "depth": self._depth}

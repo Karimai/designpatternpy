@@ -47,7 +47,7 @@ class HotDrinkMachine:
             self.initialized = True
             for d in self.AvailableDrink:
                 name = d.name[0] + d.name[1:].lower()
-                factory_name = name + 'Factory'
+                factory_name = name + "Factory"
                 factory_instance = eval(factory_name)()
                 self.factories.append((name, factory_instance))
 

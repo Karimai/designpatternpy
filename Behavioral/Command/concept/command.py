@@ -35,5 +35,5 @@ class RemoteControl:
 
     def undo_command(self):
         if self.history:
-            command: TurnOnCommand|TurnOffCommand = self.history.pop()
+            command: TurnOnCommand | TurnOffCommand = self.history.pop()
             command.undo()

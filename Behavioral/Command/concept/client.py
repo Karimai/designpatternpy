@@ -11,4 +11,3 @@ if __name__ == "__main__":
     remote.execute_command(turn_off)
     remote.undo_command()
     remote.undo_command()
-

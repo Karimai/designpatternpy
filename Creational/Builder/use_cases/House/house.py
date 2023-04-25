@@ -20,5 +20,4 @@ class House:
             if v is None:
                 finished = False
                 break
-        super().__setattr__('finish', finished)
-
+        super().__setattr__("finish", finished)

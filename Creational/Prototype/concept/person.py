@@ -11,6 +11,7 @@ class Address:
     def __str__(self):
         return f"{self.number}, {self.street}, {self.city}, {self.country}"
 
+
 class Person:
     def __init__(self, name, address: Address):
         self.name = name

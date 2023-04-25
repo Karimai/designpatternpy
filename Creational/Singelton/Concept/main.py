@@ -5,6 +5,7 @@ class Singleton:
     """
     The Singleton class
     """
+
     "Variables declared at class level are static variables that can be accessed"
     " directly using the class name without needing the class to be instantiated"
     value = []

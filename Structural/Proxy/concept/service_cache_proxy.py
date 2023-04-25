@@ -9,6 +9,6 @@ class ServiceCacheProxy(IService):
 
     def request(self):
         if len(self.data) == 0:
-            print('let initialize it.')
+            print("let initialize it.")
             self.data = self.service.data
         return self.data

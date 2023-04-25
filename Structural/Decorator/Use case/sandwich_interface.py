@@ -8,4 +8,3 @@ class ISandwich(metaclass=ABCMeta):
         """
         return properties of a sandwich
         """
-

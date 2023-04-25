@@ -11,8 +11,10 @@ class Person:
         self.income = None
 
     def __str__(self) -> str:
-        return f"Address: {self.address, self.postcode, self.city}\n" \
-               f"Employee at {self.company} as a {self.position} earning {self.income}\n"
+        return (
+            f"Address: {self.address, self.postcode, self.city}\n"
+            f"Employee at {self.company} as a {self.position} earning {self.income}\n"
+        )
 
 
 class PersonBuilder:  # Facade
@@ -67,12 +69,16 @@ class PersonAddressBuilder(PersonBuilder):
 
 if __name__ == "__main__":
     pb = PersonBuilder()
-    p = pb.\
-        works.at("Fynch").as_a("Developer").earning(2000).\
-        lives.at("Ganzeril").with_postcode("6721 RK").in_city("Bennekom").\
-        build()
+    p = (
+        pb.works.at("Fynch")
+        .as_a("Developer")
+        .earning(2000)
+        .lives.at("Ganzeril")
+        .with_postcode("6721 RK")
+        .in_city("Bennekom")
+        .build()
+    )
     print(p)
 
     addp = PersonAddressBuilder(None)
     print(addp.lives.at("Iran").build())
-

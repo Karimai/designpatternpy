@@ -1,4 +1,4 @@
-from concret_flyweight import  ConcreteFlyweight
+from concret_flyweight import ConcreteFlyweight
 
 
 class FlyweightFactory:

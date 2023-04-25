@@ -54,21 +54,21 @@ class ProductFilter:
         return filter(lambda pr: pr.color == color and pr.size == size, prods)
 
 
-apple = Product('Apple', Color.Green, Size.SMALL)
-tree = Product('Tree', Color.Green, Size.LARGE)
-house = Product('House', Color.Blue, Size.LARGE)
+apple = Product("Apple", Color.Green, Size.SMALL)
+tree = Product("Tree", Color.Green, Size.LARGE)
+house = Product("House", Color.Blue, Size.LARGE)
 
 products = [apple, tree, house]
 
 pf = ProductFilter()
 for p in pf.filter_by_color(products, Color.Green):
-    print(f' - {p.name} is green!')
+    print(f" - {p.name} is green!")
 
 for p in pf.filter_by_size(products, Size.LARGE):
-    print(f' - {p.name} is large!')
+    print(f" - {p.name} is large!")
 
 # ################################# Applying OCP ###########
-print('############ OCP #############')
+print("############ OCP #############")
 
 
 class Specification:
@@ -119,18 +119,18 @@ class OCPFilter(Filter):
 
 ocp_filter = OCPFilter()
 
-print('Green products:')
+print("Green products:")
 green = ColorSpecification(Color.Green)
 for p in ocp_filter.filter(products, green):
-    print(f' - {p.name} is green!')
+    print(f" - {p.name} is green!")
 
-print('Large products:')
+print("Large products:")
 large = SizeSpecification(Size.LARGE)
 for p in ocp_filter.filter(products, large):
-    print(f' - {p.name} is large!')
+    print(f" - {p.name} is large!")
 
-print('Large Blue items')
+print("Large Blue items")
 blue = ColorSpecification(Color.Blue)
 large_blue = large & blue
 for p in ocp_filter.filter(products, large_blue):
-    print(f'  - {p.name} is large and blue')
+    print(f"  - {p.name} is large and blue")

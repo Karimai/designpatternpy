@@ -30,7 +30,7 @@ def first_func():
             nonlocal x
             print(x)
         except SyntaxError as e:
-            print(f'not possible {e}')
+            print(f"not possible {e}")
             pass
 
     inner_func_default()

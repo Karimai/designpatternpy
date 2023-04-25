@@ -26,4 +26,3 @@ if __name__ == "__main__":
     db2 = Database()
 
     print(db1 is db2)  # True
-    

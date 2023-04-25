@@ -1,4 +1,3 @@
-
 from flyweight_interface import IFlyweight
 
 
@@ -8,5 +7,3 @@ class Flyweight(IFlyweight):
 
     def operation(self, extrinsic_state):
         pass
-
-

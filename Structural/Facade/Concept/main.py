@@ -1,38 +1,39 @@
 class ComplexSystem:
-
     def __init__(self):
         self.built = False
+
     def create(self):
-        print('create it')
+        print("create it")
 
     def decorate(self):
-        print('decorate it')
+        print("decorate it")
 
     def destroy(self):
-        print('destroy it.')
+        print("destroy it.")
 
     def repair(self):
-        print('repair it.')
+        print("repair it.")
 
     def rent(self):
-        print('give it for rent.')
+        print("give it for rent.")
 
     def empty(self):
-        print('emptry it')
+        print("emptry it")
 
     def paint(self):
-        print('paint it')
+        print("paint it")
 
     def prepare(self):
-        print('prepare it')
+        print("prepare it")
 
     def clean(self):
-        print('clean it')
+        print("clean it")
 
 
 class Facade:
-
-    def __init__(self, ):
+    def __init__(
+        self,
+    ):
         self.complex_system = ComplexSystem()
 
     def build(self):
@@ -42,7 +43,7 @@ class Facade:
         self.complex_system.decorate()
         self.complex_system.clean()
         self.complex_system.built = True
-        print('it was built.')
+        print("it was built.")
 
     def rebuild(self):
         if self.complex_system.built:
@@ -51,9 +52,9 @@ class Facade:
             self.complex_system.destroy()
             self.complex_system.built = True
         self.build()
-        print('it was rebuilt')
+        print("it was rebuilt")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     facade = Facade()
     facade.rebuild()

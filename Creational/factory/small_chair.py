@@ -1,5 +1,6 @@
 from interface_chair import IChair
 
+
 class SmallChair(IChair):
     """
     The Small Chair Class
@@ -11,8 +12,4 @@ class SmallChair(IChair):
         self._depth = 40
 
     def get_dimensions(self):
-        return {
-            "width": self._width,
-            "depth": self._depth,
-            "height": self._height
-        }
+        return {"width": self._width, "depth": self._depth, "height": self._height}

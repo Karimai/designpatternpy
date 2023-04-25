@@ -71,12 +71,12 @@ class NotificationManager:
 
 
 if __name__ == "__main__":
-    contact = Contact('Karim Moradi', 'kmoradi.ai@gmail.com', '+3165432899')
+    contact = Contact("Karim Moradi", "kmoradi.ai@gmail.com", "+3165432899")
     sms_notification = SMS(phone=contact.phone)
     email_notification = Email(email=contact.email)
 
     notification_manager = NotificationManager(sms_notification)
-    notification_manager.send('Hello Karim!')
+    notification_manager.send("Hello Karim!")
 
     notification_manager.notification = email_notification
     notification_manager.send("Hi Karim!")

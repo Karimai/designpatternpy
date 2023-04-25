@@ -18,7 +18,7 @@ class Prototype:
 
 
 class Car:
-    def __init__(self, name: str = 'Unknown', color: str = 'Unknown', price: int = 0):
+    def __init__(self, name: str = "Unknown", color: str = "Unknown", price: int = 0):
         self.name: str = name
         self.color: str = color
         self.price: int = price
@@ -27,17 +27,17 @@ class Car:
         return f"{self.name} | {self.color} | {self.price}"
 
 
-car = Car('Toyota Corolla', 'Blue', 15000)
+car = Car("Toyota Corolla", "Blue", 15000)
 
 prototype = Prototype()
-prototype.register_object('car', car)
+prototype.register_object("car", car)
 
-car_clone = prototype.clone('car')
+car_clone = prototype.clone("car")
 print(car_clone)
 
 
-car_clone.name = 'Honda Civic'
-car_clone.color = 'Red'
+car_clone.name = "Honda Civic"
+car_clone.color = "Red"
 car_clone.price = 20000
 
 print(car_clone)

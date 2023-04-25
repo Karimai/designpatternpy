@@ -23,4 +23,3 @@ class PersonFactory:
     def create_person(self, name):
         self.id += 1
         return Person(id, name=name)
-

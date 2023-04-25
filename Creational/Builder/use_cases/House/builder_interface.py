@@ -2,7 +2,6 @@ from abc import ABCMeta, abstractmethod
 
 
 class IBuilder(metaclass=ABCMeta):
-
     @abstractmethod
     def build_walls(self):
         """

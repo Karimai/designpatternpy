@@ -30,7 +30,6 @@ from abc import ABC
 
 
 class CurrencyConverter(ABC):
-
     def __init__(self):
         self.rate = 1.0
 
@@ -43,7 +42,7 @@ class FXConverter(CurrencyConverter):
         self.rate: float = 1.15
 
     def convert(self, from_currency: str, to_currency: str, amount: float) -> float:
-        print('Converting currency using FX API')
+        print("Converting currency using FX API")
         print(f"{amount} {from_currency} = {amount * self.rate} to {to_currency}")
         return amount * self.rate
 
@@ -63,7 +62,7 @@ class App:
         self.converter = converter
 
     def convert(self):
-        self.converter.convert('EUR', 'USD', 100)
+        self.converter.convert("EUR", "USD", 100)
 
 
 if __name__ == "__main__":
@@ -73,5 +72,3 @@ if __name__ == "__main__":
 
     app.converter = FXConverter()
     app.convert()
-
-

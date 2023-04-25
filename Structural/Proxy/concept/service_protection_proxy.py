@@ -4,9 +4,8 @@ from service_interface import IService
 
 
 class ServiceProtectionProxy(IService):
-
     def __init__(self):
-        print('initialized successfully')
+        print("initialized successfully")
 
     def request(self):
         auth = [True, False][random.randint(0, 1)]

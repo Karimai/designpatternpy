@@ -4,6 +4,7 @@ The class should only have one reason to change.
 It is also called Separation of concerns: different classes handling different, independent tasks/problems.
 """
 
+
 class Candidates:
     # The primary responsibility is keeping the candidate data.
     # There should be only one reason to change a class, and it
@@ -18,7 +19,7 @@ class Candidates:
         del self.candidates[pos]
 
     def __str__(self):
-        return '\n'.join(self.candidates)
+        return "\n".join(self.candidates)
 
     def clear(self):
         self.candidates.clear()
@@ -41,20 +42,20 @@ class Candidates:
 class PersistanceManager:
     @staticmethod
     def save(data: Candidates, file_name: str):
-        with open(file_name, 'w') as fh:
+        with open(file_name, "w") as fh:
             fh.write(str(data))
 
     @staticmethod
     def load(data: Candidates, file_name: str):
-        with open(file_name, 'r') as fh:
+        with open(file_name, "r") as fh:
             lines = fh.readlines()
             for line in lines:
-                data.add_candidate(line.split(': ')[1])
+                data.add_candidate(line.split(": ")[1])
 
 
 c = Candidates()
-c.add_candidate('Karim')
-c.add_candidate('Javad')
+c.add_candidate("Karim")
+c.add_candidate("Javad")
 
 print(c)
 
@@ -63,7 +64,7 @@ print(c)
 # c.load('candidates.txt')
 # print(c)
 
-PersistanceManager.save(c, 'candidates.txt')
+PersistanceManager.save(c, "candidates.txt")
 c.clear()
-PersistanceManager.load(c, 'candidates.txt')
+PersistanceManager.load(c, "candidates.txt")
 print(c)

@@ -5,6 +5,7 @@ class IBuilder(metaclass=ABCMeta):
     """
     The builder interface
     """
+
     @staticmethod
     @abstractmethod
     def build_part_one():

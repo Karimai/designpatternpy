@@ -2,7 +2,6 @@ from abc import ABCMeta, abstractmethod
 
 
 class IComponent(metaclass=ABCMeta):
-
     def __init__(self, name: str, investment: int):
         self._name = name
         self._investment = investment

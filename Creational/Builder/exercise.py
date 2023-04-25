@@ -58,6 +58,7 @@ class Evaluate(TestCase):
   def __init__(self):
     self.name = \"\"
     self.age = 0"""
+
     @staticmethod
     def preprocess(s: str = ""):
         return s.strip().replace("\r\n", "\n")
@@ -73,7 +74,7 @@ class TestCodeBuilder:
     self.name = \"\"
     self.age = 0"""
 
-    def preprocess(self, s: str=""):
+    def preprocess(self, s: str = ""):
         return s.strip().replace("\r\n", "\n")
 
     def test_person(self):

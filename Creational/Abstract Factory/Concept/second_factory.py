@@ -35,11 +35,10 @@ class ProductB(IProduct):
 
 
 class FactoryB:
-
     @staticmethod
     def create_object(product_type: str):
-        if product_type == 'd':
+        if product_type == "d":
             return ProductA()
-        if product_type == 'e':
+        if product_type == "e":
             return ProductB()
         return None
