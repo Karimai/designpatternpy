@@ -28,3 +28,7 @@ Both Bridge and Adapter patterns are design patterns in OOP that are used to con
    1. The Bridge pattern is often used when there is a need for multiple, related variations of an object, while the Adapter pattern is used when an existing class needs to be reused, but its interface is not compatible with the rest of the system.
 
 In summary, both the Bridge and the Adapter patterns are used to connect two interfaces, but the Bridge pattern is used to decouple and abstraction from its implementation, while the Adapter pattern is used to adapt the interface of another. The Bridge pattern is more complex and used at a higher level of abstraction, while the Adapter pattern is simpler and used to connect individual components.
+
+It helps to escape complexity explosion.
+
+You can think of stronger form of encapsulation.
