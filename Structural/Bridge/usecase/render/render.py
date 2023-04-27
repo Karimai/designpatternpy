@@ -21,8 +21,11 @@ class Shape:
     def __init__(self, renderer: IRenderer):
         self.renderer = renderer
 
-    def draw(self): pass
-    def resize(self, factor: int): pass
+    def draw(self):
+        pass
+
+    def resize(self, factor: int):
+        pass
 
 
 class Circle(Shape):

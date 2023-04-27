@@ -7,5 +7,6 @@ second_leaf = Leaf("Second", 155)
 composite = Composite("Capital", 245)
 
 composite.add(first_leaf)
+first_leaf.name = "Karim First"
 composite.add(second_leaf)
 composite.status()

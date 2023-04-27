@@ -6,6 +6,7 @@ class IComponent(metaclass=ABCMeta):
         self._name = name
         self._investment = investment
 
+    @abstractmethod
     def status(self):
         pass
 
