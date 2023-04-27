@@ -7,3 +7,6 @@ It composes objects into tree structures to represent part-whole hierarchies. So
 It is useful for hierarchical management.
 
 Composite let us make compound object.
+
+The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. In this pattern, a component is defined as an object that can have children, and a leaf is defined as an object that cannot have children. The composite pattern allows clients to treat individual objects and compositions of objects uniformly.
+
