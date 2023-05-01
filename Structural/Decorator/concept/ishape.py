@@ -7,7 +7,7 @@ class IShape(ABC):
 
 
 class Circle(IShape):
-    def __init__(self, radius = 0):
+    def __init__(self, radius=0):
         self.radius = radius
 
     def __str__(self):

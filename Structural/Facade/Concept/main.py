@@ -50,7 +50,7 @@ class Facade:
             self.complex_system.empty()
             self.complex_system.prepare()
             self.complex_system.destroy()
-            self.complex_system.built = True
+            self.complex_system.built = False
         self.build()
         print("it was rebuilt")
 

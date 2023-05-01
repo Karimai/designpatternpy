@@ -6,6 +6,7 @@ class ValueContainer(Iterable, ABC):
     """
     It is the component!
     """
+
     @property
     def sum(self):
         return sum(i for c in self for i in c)
@@ -16,6 +17,7 @@ class SingleValue(ValueContainer):
     It is the leaf!
     Represent a single value!
     """
+
     def __init__(self, value):
         self.value = value
 
@@ -28,6 +30,7 @@ class ManyValues(list, ValueContainer):
     It is composite.
     Represent a collection of values.
     """
+
     pass
 
 
