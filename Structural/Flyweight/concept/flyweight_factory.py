@@ -1,22 +1,8 @@
-from abc import ABCMeta, abstractmethod
-
-
-class IFlyweight(metaclass=ABCMeta):
-    @abstractmethod
-    def operation(self, extrinsic_state):
-        pass
-
-
-class Flyweight(IFlyweight):
-    def __init__(self, intrinsic_state):
+class ConcreteFlyweight:
+    def __init__(self, intrinsic_state: str):
         self._intrinsic_state = intrinsic_state
 
-    def operation(self, extrinsic_state):
-        pass
-
-
-class ConcreteFlyweight(Flyweight):
-    def operation(self, extrinsic_state):
+    def operation(self, extrinsic_state: str):
         print(f"Concrete FlyWeight: {self._intrinsic_state}, {extrinsic_state}")
 
 
@@ -24,7 +10,7 @@ class FlyweightFactory:
     def __init__(self):
         self._flyweights = {}
 
-    def get_flyweight(self, key):
+    def get_flyweight(self, key: str):
         if key not in self._flyweights:
             self._flyweights[key] = ConcreteFlyweight(key)
         return self._flyweights[key]
