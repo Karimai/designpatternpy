@@ -11,3 +11,5 @@ Difference between proxy and Adapter: The Adapter will try to adapt two existing
 A proxy object acts as an intermediary between a client and the real object, controlling access to the real object and providing additional functionality if needed.
 
 In essence, the Proxy Design Pattern allows you to substitute an object with another object that can perform additional tasks such as lazy **initialization**, **caching**, **logging**, or **authentication**.
+
+A proxy has the same interface as the underlying object. So, to create a proxy, simply replicate the existing interface of on object and wrap the functionalities.
