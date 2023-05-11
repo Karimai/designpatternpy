@@ -9,6 +9,7 @@ sentence[1].capitalize = True
 print(sentence)  # writes "hello WORLD"
 """
 
+
 class Sentence:
     def __init__(self, plain_text: str):
         self.words = plain_text.split(" ")

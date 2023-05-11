@@ -13,7 +13,9 @@ class Bitmap:
 class LazyBitmap:
     def __init__(self, filename: str):
         self.filename = filename
-        self.bitmap = None  # In order to not load an image which is not supposed to be rendered.
+        self.bitmap = (
+            None  # In order to not load an image which is not supposed to be rendered.
+        )
 
     def draw(self):
         if not self.bitmap:
@@ -26,6 +28,8 @@ class LazyBitmap:
 
 
 if __name__ == "__main__":
-    bmp = Bitmap("a_bitmap_image.jpg") # the image is already loaded
-    lazy_bmp = LazyBitmap("a_lazy_bitmap_image.jpg") # The image is not loaded in this step
+    bmp = Bitmap("a_bitmap_image.jpg")  # the image is already loaded
+    lazy_bmp = LazyBitmap(
+        "a_lazy_bitmap_image.jpg"
+    )  # The image is not loaded in this step
     lazy_bmp.draw()
