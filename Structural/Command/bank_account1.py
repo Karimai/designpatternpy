@@ -6,6 +6,7 @@ class Command(ABC):
     """
     The Command Interface declares a method for executing a command.
     """
+
     @abstractmethod
     def execute(self):
         pass
@@ -43,6 +44,7 @@ class DepositCommand(Command):
     """
     A concrete command that deposits money into a bank account.
     """
+
     def __init__(self, account: BankAccount, amount: int):
         self._account = account
         self._amount = amount
@@ -58,6 +60,7 @@ class WithdrawCommand(Command):
     """
     A concrete command that deposits money into a bank account.
     """
+
     def __init__(self, account: BankAccount, amount: int):
         self._account = account
         self._amount = amount
@@ -86,6 +89,7 @@ class BankSystem:
     """
     The Invoker class asks the command to carry out the request.
     """
+
     def __init__(self):
         self._history = []
 

@@ -58,20 +58,16 @@ class BankAccountCommand(Command):
             self.account.deposit(self.amount)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ba = BankAccount()
-    cmd = BankAccountCommand(
-        ba, BankAccountCommand.Action.DEPOSIT, 100
-    )
+    cmd = BankAccountCommand(ba, BankAccountCommand.Action.DEPOSIT, 100)
 
     cmd.invoke()
     print(f"After $100 deposit: {ba}")
     cmd.undo()
     print(f"After undo, deposit: {ba}")
 
-    illegal_cmd = BankAccountCommand(
-        ba, BankAccountCommand.Action.WITHDRAW, 1000
-    )
+    illegal_cmd = BankAccountCommand(ba, BankAccountCommand.Action.WITHDRAW, 1000)
     illegal_cmd.invoke()
     print(f"Withdraw too much: {ba}")
     illegal_cmd.undo()

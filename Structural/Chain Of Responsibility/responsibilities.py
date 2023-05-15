@@ -5,7 +5,7 @@ class Creature:
         self.name = name
 
     def __str__(self):
-        return f'{self.name} ({self.attack}/{self.defense})'
+        return f"{self.name} ({self.attack}/{self.defense})"
 
 
 class CreatureModifier:
@@ -26,25 +26,25 @@ class CreatureModifier:
 
 class NoBonusesModifier(CreatureModifier):
     def handle(self):
-        print('No bonuses for you!')
+        print("No bonuses for you!")
 
 
 class DoubleAttackModifier(CreatureModifier):
     def handle(self):
-        print(f'Doubling {self.creature.name}''s attack')
+        print(f"Doubling {self.creature.name}" "s attack")
         self.creature.attack *= 2
         super().handle()
 
 
 class IncreaseDefenseModifier(CreatureModifier):
     def handle(self):
-        print(f'Increasing {self.creature.name}''s defense')
+        print(f"Increasing {self.creature.name}" "s defense")
         self.creature.defense += 1
         super().handle()
 
 
-if __name__ == '__main__':
-    goblin = Creature('Goblin', 1, 1)
+if __name__ == "__main__":
+    goblin = Creature("Goblin", 1, 1)
     print(goblin)
 
     root = CreatureModifier(goblin)
