@@ -1,6 +1,6 @@
+from abstract import Abstraction
 from first_implementation import FirstImplementation
 from second_implementation import SecondImplementation
-from abstract import Abstraction
 
 first_implementation = FirstImplementation()
 second_implementation = SecondImplementation()

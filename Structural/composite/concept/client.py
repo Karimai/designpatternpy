@@ -1,5 +1,5 @@
-from leaf import Leaf
 from composite import Composite
+from leaf import Leaf
 
 first_leaf = Leaf("First", 100)
 second_leaf = Leaf("Second", 155)

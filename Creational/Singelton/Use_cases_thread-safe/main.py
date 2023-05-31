@@ -1,7 +1,8 @@
 import random
 import threading
-from leaderboard import Leaderboard
+
 from first_game import Game
+from leaderboard import Leaderboard
 
 teams = [
     "Fc-byirn",

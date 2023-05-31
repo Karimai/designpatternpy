@@ -20,6 +20,7 @@ class ChatRoom:
     """
     This is a mediator pattern.
     """
+
     def __init__(self):
         self.people = []
 

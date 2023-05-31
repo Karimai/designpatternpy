@@ -2,8 +2,8 @@
 A Game Class that uses the leaderboard Singleton
 """
 
-from leaderboard import Leaderboard
 from game_interface import IGame
+from leaderboard import Leaderboard
 
 
 class FirstGame(IGame):

@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod
+
 from first_factory import FactoryA
 from second_factory import FactoryB
 

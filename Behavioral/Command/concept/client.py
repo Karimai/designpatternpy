@@ -1,5 +1,5 @@
+from command import RemoteControl, TurnOffCommand, TurnOnCommand
 from light import Light
-from command import RemoteControl, TurnOnCommand, TurnOffCommand
 
 if __name__ == "__main__":
     light = Light()

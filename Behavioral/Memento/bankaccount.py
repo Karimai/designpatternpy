@@ -32,7 +32,7 @@ class BankAccount:
         return None
 
     def redo(self):
-        if self.current +1 < len(self.changes):
+        if self.current + 1 < len(self.changes):
             self.current += 1
             m = self.changes[self.current]
             self.balance = m.balance
@@ -51,4 +51,3 @@ if __name__ == "__main__":
 
     ba.undo()
     print("After undo: ", ba)
-    

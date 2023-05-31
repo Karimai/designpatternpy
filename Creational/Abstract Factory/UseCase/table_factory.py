@@ -1,6 +1,6 @@
 from table_circle import CircleTable
-from table_rectangle import RectangleTable
 from table_interface import ITable
+from table_rectangle import RectangleTable
 
 
 class TableFactory:

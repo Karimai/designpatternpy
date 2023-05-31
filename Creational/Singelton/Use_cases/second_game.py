@@ -1,5 +1,5 @@
-from leaderboard import Leaderboard
 from game_interface import IGame
+from leaderboard import Leaderboard
 
 
 class SecondGame(IGame):

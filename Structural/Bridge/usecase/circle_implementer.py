@@ -1,5 +1,4 @@
 import pyfiglet
-
 from shape_implementer_interface import IShapeImplementer
 
 

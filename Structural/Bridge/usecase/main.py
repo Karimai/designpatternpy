@@ -1,7 +1,6 @@
 from circle import Circle
-from square import Square
-
 from circle_implementer import CircleImplementer
+from square import Square
 from square_implementer import SquareImplementer
 
 shapes = [Circle(CircleImplementer), Square(SquareImplementer)]

@@ -1,7 +1,7 @@
-from chair_interface import IChair
-from small_chair import SmallChair
 from big_chair import BigChair
+from chair_interface import IChair
 from medium_chair import MediumChair
+from small_chair import SmallChair
 
 
 class ChairFactory:

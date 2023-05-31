@@ -1,5 +1,5 @@
-from service_interface import IService
 from service import Service
+from service_interface import IService
 
 
 class ServiceCacheProxy(IService):

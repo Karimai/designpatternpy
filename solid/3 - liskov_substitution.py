@@ -10,7 +10,6 @@ You should always be able to substitute a base type for a subtype.
 
 from abc import ABCMeta, abstractmethod
 
-
 # class Notification(metaclass=ABCMeta):
 #     @abstractmethod
 #     def notify(self, message: str, email: str):

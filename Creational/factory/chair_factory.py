@@ -1,6 +1,6 @@
-from small_chair import SmallChair
-from medium_chair import MediumChair
 from big_chair import BigChair
+from medium_chair import MediumChair
+from small_chair import SmallChair
 
 
 class ChairFactory:
