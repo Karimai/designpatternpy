@@ -97,7 +97,7 @@ def parse(tokens):
                     break
                 j += 1
             # preprocess subexpression
-            subexpression = tokens[i + 1: j]
+            subexpression = tokens[i + 1 : j]
             element = parse(subexpression)
             if not have_lhs:
                 result.left = element

@@ -8,3 +8,4 @@ Three main concepts should be defined:
 3. Rules:
    What triggers can be chosen and which state will be the result of such a trigger.
 
+The composition concept of OOP is being used here.
